@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "321887193531",
+    "project_id": "finalproject4-264ba",
+    "storage_bucket": "finalproject4-264ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321887193531:android:e9399a0247549fdd2d9c9e",
+        "android_client_info": {
+          "package_name": "com.hacktiv8.finalproject4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "321887193531-3jgnjr4037cbh0nvald70ij1c1h3q9bn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC388kUs5LcDZyoAQJ387KUyAIxBaWXahY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "321887193531-3jgnjr4037cbh0nvald70ij1c1h3q9bn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

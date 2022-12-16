@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FinalProject4</string>
+    <string name="PaymentTitle"><b>Payment Confirmation</b></string>
+</resources>

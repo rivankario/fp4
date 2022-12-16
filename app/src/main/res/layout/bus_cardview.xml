@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:elevation="10dp">
+
+    <!--Important
+    busName
+    busType
+    travelTime
+    startPoint
+    endPoint
+    rating
+    seatText
+    price
+    bedQuantity
+    seatQuantity-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/busName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Bus"
+            style="@style/BusName"/>
+
+        <TextView
+            android:id="@+id/busType"
+            style="@style/BusType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/busName"
+            android:layout_marginTop="5dp"
+            android:text="Tipe Bus" />
+
+        <TextView
+            android:id="@+id/travelTime"
+            style="@style/TravelTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/busType"
+            android:layout_marginTop="3dp"
+            android:text="10 hrs" />
+
+        <TextView
+            android:id="@+id/startPoint"
+            style="@style/Hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/travelTime"
+            android:text="8:00 PM" />
+        <TextView
+            android:id="@+id/stripes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ---- "
+            android:textScaleX="1.5"
+            android:layout_below="@id/travelTime"
+            android:layout_toEndOf="@id/startPoint"
+            style="@style/Hours"/>
+
+        <TextView
+            android:id="@+id/endPoint"
+            style="@style/Hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/travelTime"
+            android:layout_toEndOf="@id/stripes"
+            android:text="2:00 AM" />
+        <TextView
+            android:id="@+id/ratingPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="3.0"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_below="@id/startPoint"
+            style="@style/Rating"
+            android:background="@color/background"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="999 rating"
+            android:layout_toEndOf="@id/ratingPoint"
+            android:layout_below="@id/startPoint"
+            style="@style/Rating" />
+
+        <ImageView
+            android:id="@+id/bed"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/available_bed"
+             />
+
+        <ImageView
+            android:id="@+id/seat"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/bed"
+            android:src="@drawable/available_seat"
+            />
+
+        <TextView
+            android:id="@+id/seatText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/windowSeats"
+            android:layout_below="@id/seat"
+            style="@style/TravelTime"
+            android:textColor="@color/grey"
+            android:text="window seats"/>
+
+        <TextView
+            android:id="@+id/windowSeats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/seat"
+            android:layout_marginEnd="5dp"
+            android:layout_below="@id/seat"
+            style="@style/TravelTime"
+            android:textColor="@color/grey"
+            android:text="4"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/windowSeats"
+            android:layout_alignBaseline="@id/rating"
+            android:layout_below="@id/windowSeats"
+            style="@style/Price"
+            android:text="Rs 900"/>
+
+        <ImageView
+            android:id="@+id/bedCircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bed_ready"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_alignTop="@id/bed"
+            android:layout_alignBottom="@id/bed"
+            android:layout_alignLeft="@id/bed"
+            android:layout_alignRight="@id/bed"/>
+
+        <TextView
+            android:id="@+id/bedQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignTop="@id/bedCircle"
+            android:layout_alignBottom="@id/bedCircle"
+            android:layout_alignLeft="@id/bedCircle"
+            android:layout_alignRight="@id/bedCircle"
+            android:textSize="5pt"
+            android:textColor="@color/white"
+            android:text="4"/>
+
+        <ImageView
+            android:id="@+id/seatCircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hightlighted_date"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_alignTop="@id/seat"
+            android:layout_alignBottom="@id/seat"
+            android:layout_alignLeft="@id/seat"
+            android:layout_alignRight="@id/seat"/>
+
+        <TextView
+            android:id="@+id/seatQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignTop="@id/seatCircle"
+            android:layout_alignBottom="@id/seatCircle"
+            android:layout_alignLeft="@id/seatCircle"
+            android:layout_alignRight="@id/seatCircle"
+            android:textSize="5pt"
+            android:textColor="@color/white"
+            android:text="20"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

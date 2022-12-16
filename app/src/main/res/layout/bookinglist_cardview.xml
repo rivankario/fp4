@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:elevation="10dp">
+
+    <!--Important
+    busName
+    busType
+    travelTime
+    startPoint
+    endPoint
+    rating
+    seatText
+    price
+    bedQuantity
+    seatQuantity-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/RVtitleBookingID"
+            style="@style/BusName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BookingID" />
+
+        <TextView
+            android:id="@+id/RVtitleBusName"
+            style="@style/BusType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RVtitleBookingID"
+            android:layout_marginTop="5dp"
+            android:text="BusName" />
+
+        <TextView
+            android:id="@+id/RVtravelTime"
+            style="@style/TravelTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RVtitleBusName"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:text="10 hrs" />
+
+        <TextView
+            android:id="@+id/RVstartPoint"
+            style="@style/Hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RVtravelTime"
+            android:text="8:00 PM" />
+        <TextView
+            android:id="@+id/stripes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ---- "
+            android:textScaleX="1.5"
+            android:layout_below="@id/RVtravelTime"
+            android:layout_toEndOf="@id/RVstartPoint"
+            style="@style/Hours"/>
+
+        <TextView
+            android:id="@+id/RVendPoint"
+            style="@style/Hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RVtravelTime"
+            android:layout_toEndOf="@id/stripes"
+            android:text="2:00 AM" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/RVstartPoint"
+
+            >
+
+            <TextView
+                android:id="@+id/RVseatBookingList"
+                android:layout_below="@id/startPoint"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:text="Seat" />
+
+            <TextView
+                android:id="@+id/RVpriceBookingList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:text="Total"/>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
